@@ -5,7 +5,7 @@ It uses the OAuth2 library to authenticate to BQ via a Service Account.
 Easily adaptable to call other API methods using SA authentication.  
 
 # SET UP
-1. Create or use an existing service account that has IAM rights over BigQuery.   
+1. Create or use an existing service account that has IAM rights over BigQuery. To have the main function of our file work (Execute a SQL query on BigQuery) the SA should have the BigQuery User role.
 2. Generate it's credential file as a json.  
 3. Copy the query-bq-with-sa.gs in your Apps Script project.   
 4. In the menu Resources > Libraries: enable the OAuth2 library.   
